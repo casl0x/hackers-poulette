@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackers Poulette</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body class="flex items-center justify-center w-screen">
 
     <form class="w-1/3 my-14 space-y-4">
       <div class="">
-        <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name : </label><input type="text" name="name" id="name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name : </label><input type="text" name="name" id="name" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
       </div>
       <div>
-        <label for="firstname" class="block text-sm font-medium leading-6 text-gray-900">Firstname :</label><input type="text" name="firstname" id="firstname" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        <label for="firstname" class="block text-sm font-medium leading-6 text-gray-900">Firstname :</label><input type="text" name="firstname" id="firstname" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
       </div>
       <div>
-        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email adress :</label><input type="email" name="email" id="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email adress :</label><input type="email" name="email" id="email" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
       </div>
       <div class="col-span-full">
         <label for="cover-photo" class="block text-sm font-medium leading-6 text-gray-900">Upload your picture :</label>
@@ -36,7 +35,7 @@
           </div>
         </div>
         <div>
-          <label for="desc" class="block text-sm font-medium leading-6 text-gray-900">Give us a description of your probleme :</label><input type="text" name="desc" id="desc" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          <label for="desc" class="block text-sm font-medium leading-6 text-gray-900">Give us a description of your probleme :</label><input type="text" name="desc" id="desc" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         </div>
         <div>
           <button type="button" id="validate-btn" class="text-white bg-indigo-500 hover:bg-indigo-400 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-indigo-500 dark:hover:bg-indigo-400 "> Send
