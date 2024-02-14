@@ -8,6 +8,7 @@
 </head>
 <body class="flex items-center justify-center w-screen flex-col">
     <h1 class="text-4xl font-semi-bold tracking-tight text-black sm:text-4xl">Admin Dashboard</h1>
+    <a href="./index.php" class="text-base font-semibold leading-7 text-black"><span aria-hidden="true">&larr;</span> Return to form</a>
 
     <div class="w-9/12 my-14">
     <?php
@@ -26,10 +27,10 @@
 
       $requete = $conn->query('SELECT * FROM formulaire');
 
-      echo "<table class='border border-black'>";
-      echo "<tr><th class='p-3 border-b border-r w-1/5'>Name</th><th class='p-3 border-b border-r w-1/5'>Firstname</th><th class='p-3 border-b border-r w-1/5'>Email</th><th class='p-3 border-b border-r w-1/5'>Picture</th><th class='p-3 border-b border-r w-1/5'>Description</th><th class='p-3 border-b w-1/5'>Status</th></tr>";
+      echo "<table class=''>";
+      echo "<tr><th class='p-3 border-b border-r-2 w-1/5'>Name</th><th class='p-3 border-b border-r-2 w-1/5'>Firstname</th><th class='p-3 border-b border-r-2 w-1/5'>Email</th><th class='p-3 border-b border-r-2 w-1/5'>Picture</th><th class='p-3 border-b border-r-2 w-1/5'>Description</th><th class='p-3 border-b w-1/5'>Status</th></tr>";
       while ($donnees = $requete->fetch()) {
-          echo "<tr><td class='text-center border-r-2'>".$donnees['nom']."</td><td class='text-center border-r-2'>".$donnees['prenom']."</td><td class='text-center border-r-2'>".$donnees['email']."</td><td class='text-center border-r-2'>".$donnees['deposer']."</td><td class='text-center border-r-2'>".$donnees['description']."</td></tr>";
+          echo "<tr><td class='text-center border-r-2 p-2 border-b'>".$donnees['nom']."</td><td class='text-center border-r-2 p-2 border-b'>".$donnees['prenom']."</td><td class='text-center border-r-2 p-2 border-b'>".$donnees['email']."</td><td class='text-center border-r-2 p-2 border-b'>".$donnees['deposer']."</td><td class='text-center border-r-2 p-2 border-b'>".$donnees['description']."</td><td class='text-center p-2 border-b'>☺</td></tr>";
       }
       echo "</table>";
     ?>
