@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
+    <script src="./script.js"></script>
     <title>Hackers Poulette</title>
 </head>
 <body class="flex items-center justify-center w-screen flex-col">
@@ -24,7 +25,7 @@
         <div id="emailError"></div>
       </div>
       <div class="col-span-full">
-        <label for="cover-photo" class="block text-sm font-medium leading-6 text-gray-900">Upload your picture :</label>
+        <label for="file-upload" class="block text-sm font-medium leading-6 text-gray-900">Upload your picture :</label>
         <div class="mt-1 flex justify-center rounded-lg border border-dashed border-gray-900/25 py-6">
           <div class="text-center">
             <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -32,10 +33,8 @@
             </svg>
             <div class="mt-4 flex text-sm leading-6 text-gray-600">
               <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
-                <span>Upload a file</span>
-                <input id="upload" name="file-upload" type="file" class="sr-only">
-              </label>
-              <p class="pl-1"> : PNG, JPG, GIF up to 2MB</p>
+                <span>Upload a file up to 2MB</span>
+                <input id="file-upload" name="file-upload" type="file" class="sr-only">
             </div>
           </div>
           <div id="uploadError"></div>
@@ -51,7 +50,6 @@
             </svg>
           </button>
       </div>
-      <script src="./script.js"></script>
     </form>
     
     <?php
