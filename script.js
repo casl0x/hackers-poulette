@@ -35,7 +35,6 @@ function alertForm() {
         const fileSize = inputPicture.files[0].size;
         const maxSize = 2 * 1024 * 1024; // 2 Mo
         if (fileSize > maxSize) {
-            document.getElementById("uploadError")
             document.getElementById("uploadError").innerHTML = "<p class='bg-orange-100 border-l-4 border-orange-500 text-orange-700 text-sm px-4 py-1 my-2'> Must be up to 2MB</>";
         } else {
             document.getElementById("uploadError").style.display = "none";
