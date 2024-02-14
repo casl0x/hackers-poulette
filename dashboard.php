@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
     <title>Admin Dashboard</title>
 </head>
 <body class="flex items-center justify-center w-screen flex-col">
@@ -26,13 +27,12 @@
       $requete = $conn->query('SELECT * FROM formulaire');
 
       echo "<table class='border-2 border-black'>";
-      echo "<tr><th class=''>Name</th><th class=''>Firstname</th><th class=''>Email</th><th class=''>Picture</th><th class=''>Description</th><th class=''>Status</th></tr>";
+      echo "<tr><th class='p-3 border-1 border-black'>Name</th><th class='p-3 border-1 border-black'>Firstname</th><th class='p-3 border-1 border-black'>Email</th><th class='p-3 border-1 border-black'>Picture</th><th class='p-3 border-1 border-black'>Description</th><th class='p-3 border-1 border-black'>Status</th></tr>";
       while ($donnees = $requete->fetch()) {
           echo "<tr><td>".$donnees['nom']."</td><td>".$donnees['prenom']."</td><td>".$donnees['email']." Km</td><td>".$donnees['deposer']."</td><td>".$donnees['description']."</td></tr>";
       }
       echo "</table>";
     ?>
     </div>
-    <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>

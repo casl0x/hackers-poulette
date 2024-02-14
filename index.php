@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="basics.css">
+    <link rel="stylesheet" href="./output.css">
     <title>Hackers Poulette</title>
 </head>
 <body class="flex items-center justify-center w-screen flex-col">
@@ -52,7 +52,6 @@
             </svg>
           </button>
         </div>
-        <script src="https://cdn.tailwindcss.com"></script>
         <script src="./script.js"></script>
     </form>
     
