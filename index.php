@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="basics.css">
     <title>Hackers Poulette</title>
 </head>
-<body class="flex items-center justify-center w-screen">
+<body class="flex items-center justify-center w-screen flex-col">
+    <h1 class="text-4xl font-semi-bold tracking-tight text-black sm:text-6xl">Hackers Poulette</h1>
+    <a href="./dashboard.php" class="text-base font-semibold leading-7 text-black">Admin Dashboard <span aria-hidden="true">&rarr;</span></a>
 
     <form class="w-1/3 my-14 space-y-4">
       <div class="">
@@ -51,6 +53,8 @@
           </button>
         </div>
     </form>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
     
     <?php
 require 'vendor/autoload.php';
