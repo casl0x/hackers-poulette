@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
     <title>Hackers Poulette</title>
 </head>
 <body class="flex items-center justify-center w-screen flex-col">
