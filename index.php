@@ -71,11 +71,7 @@ if (isset($_POST['submit']) && isset($_POST['captcha'])) {
   }
 }
 
-
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -142,11 +138,6 @@ if (isset($_POST['submit']) && isset($_POST['captcha'])) {
         </button>
       </div>
   </form>
-
-
-
-
-
 </body>
 
 </html>
