@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
     <title>Hackers Poulette</title>
+    <!-- <script src="./script.js" type="javascript"></script> -->
 </head>
 <body class="flex items-center justify-center w-screen flex-col">
     <h1 class="text-4xl font-semi-bold tracking-tight text-black sm:text-5xl">Hackers Poulette</h1>
@@ -115,6 +116,6 @@ if(isset($_POST['submit'])) {
     $conn = null;
 }
 ?>
-    <script src="./script.js" type="javascript"></script>
+
 </body>
 </html>
