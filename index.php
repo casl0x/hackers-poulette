@@ -13,15 +13,18 @@
 
     <form class="w-1/3 my-14 space-y-4" method="POST" action="" enctype="multipart/form-data">
       <div class="">
-        <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name :</label><input type="text" name="nom" id="name" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name :</label>
+        <input type="text" name="nom" id="name" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         <div id="nameError"></div>
       </div>
       <div>
-        <label for="firstname" class="block text-sm font-medium leading-6 text-gray-900">Firstname :</label><input type="text" name="prenom" id="firstname" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        <label for="firstname" class="block text-sm font-medium leading-6 text-gray-900">Firstname :</label>
+        <input type="text" name="prenom" id="firstname" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         <div id="firstnameError"></div>
       </div>
       <div>
-        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email adress :</label><input type="email" name="email" id="email" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email adress :</label>
+        <input type="email" name="email" id="email" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
         <div id="emailError"></div>
       </div>
       <div class="col-span-full">
@@ -40,7 +43,8 @@
           <div id="uploadError"></div>
       </div>
       <div>
-          <label for="desc" class="block text-sm font-medium leading-6 text-gray-900">Give us a description of your problem :</label><input type="text" name="description" id="desc" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          <label for="desc" class="block text-sm font-medium leading-6 text-gray-900">Give us a description of your problem :</label>
+          <input type="text" name="description" id="desc" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           <div id="descError"></div>
       </div>
       <div>
@@ -51,15 +55,13 @@
           </button>
       </div>
     </form>
-    
     <?php
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-if(isset($_POST['submit'])) {
-    require 'vendor/autoload.php';
+require 'vendor/autoload.php';
 
+if(isset($_POST['submit'])) {
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -84,20 +86,20 @@ if(isset($_POST['submit'])) {
             $stmt->bindParam(':description', $description);
             $stmt->execute();
 
-            // Envoi de l'email avec PHPMailer
+            // Envoi de l'e-mail avec PHPMailer
             $mail = new PHPMailer(true);
 
             // Paramètres du serveur SMTP
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'poulettehackers@gmail.com'; // Adresse Gmail
-            $mail->Password = 'qvyl wyub gfwv vvni'; // Mot de passe Gmail
+            $mail->Username = 'huseyinsasmaz2001@gmail.com'; // Votre adresse Gmail
+            $mail->Password = 'ohln hhgq vlyn igak'; // Votre mot de passe Gmail
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
 
             // Destinataire, sujet, corps du message
-            $mail->setFrom('huseyinsasmaz2001@gmail.com', 'Hackers Poulette');
+            $mail->setFrom('poulettehackers@gmail.com', 'Hackers Poulette');
             $mail->addAddress($email);
             $mail->Subject = 'Confirmation de réception';
             $mail->Body = 'Votre message a bien été reçu. Merci !';
@@ -116,6 +118,8 @@ if(isset($_POST['submit'])) {
     $conn = null;
 }
 ?>
+
+
 
 </body>
 </html>
